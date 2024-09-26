@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
         {"<Design><Code>hello world</Code></Design><People>", false},          // no closing tag for "People"
         {"<People><Design><Code>hello world</People></Code></Design>", false}, // "/Code" should come before "/People"
         {"<People age=”1”>hello world</People>", false},                       // there is no closing tag for "People age=”1”" and no opening tag for "/People"
+        {"</Case>Wierd example<//Case>", true}, 
     };
 
     int failed_count = 0;
