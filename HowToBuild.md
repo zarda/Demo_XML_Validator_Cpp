@@ -4,10 +4,14 @@
 
 Type the following commands:
 ```sh
-# Make directory to build
-$ mkdir b && cd b
-$ cmake ..
+$ cmake .
 $ make
+```
+
+### Test
+```sh
+$ cd build
+$ ./checker
 ```
 
 ### In Visual Studio
